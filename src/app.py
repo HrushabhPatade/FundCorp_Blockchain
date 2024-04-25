@@ -9,7 +9,7 @@ def connect_blockchain_register(wallet):
         wallet=web3.eth.accounts[0]
     web3.eth.defaultAccount=wallet
     artifact_path='../build/contracts/register.json'
-    contract_address='0xF55A5271e73D7101a693afdE77Fb9CCFd6A22D3A'
+    contract_address='0xee46103a27f8Bc461fddfC9739F24834Fd309C81'
     with open(artifact_path) as F:
         contract_json=json.load(F)
         contract_abi=contract_json['abi']
@@ -23,7 +23,7 @@ def connect_blockchain_fund(wallet):
         wallet=web3.eth.accounts[0]
     web3.eth.defaultAccount=wallet
     artifact_path='../build/contracts/funds.json'
-    contract_address='0x8757E0fa2e8501d352FDE74F58A5A49E3C83EDAf'
+    contract_address='0x275F8D064Bb80416eA448E7d1a6D3aB455F9a808'
     with open(artifact_path) as F:
         contract_json=json.load(F)
         contract_abi=contract_json['abi']
